@@ -1,8 +1,3 @@
-:toc:
-:toclevels: 5
-:sectnums:
-:sectlevels: 5
-
 = HttpCL
 
 image:https://img.shields.io/badge/Author-Kawu-brightgreen[GitHub]
@@ -10,6 +5,13 @@ image:https://img.shields.io/github/license/KtokKawu/HttpCL[GitHub]
 
 HttpCLは、HTTP通信のキャプチャ機能を持つChrome拡張です。 +
 第三者セキュリティ診断の規模（リクエスト数）を把握するためにご利用ください。
+
+== Table of contents
+
+:toc:
+:toclevels: 5
+:sectnums:
+:sectlevels: 5
 
 == Requirements
 
