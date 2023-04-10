@@ -1,3 +1,8 @@
+:toc: macro
+:toclevels: 5
+:sectnums:
+:sectlevels: 5
+
 = HttpCL
 
 image:https://img.shields.io/badge/Author-Kawu-brightgreen[GitHub]
@@ -8,10 +13,7 @@ HttpCLは、HTTP通信のキャプチャ機能を持つChrome拡張です。 +
 
 == Table of contents
 
-:toc:
-:toclevels: 5
-:sectnums:
-:sectlevels: 5
+toc::[]
 
 == Requirements
 
