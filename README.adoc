@@ -11,8 +11,6 @@ image:https://img.shields.io/github/license/KtokKawu/HttpCL[GitHub]
 HttpCLは、HTTP通信のキャプチャ機能を持つChrome拡張です。 +
 第三者セキュリティ診断の規模（リクエスト数）を把握するためにご利用ください。
 
-== Table of contents
-
 toc::[]
 
 == Requirements
@@ -49,7 +47,7 @@ git clone https://github.com/KtokKawu/HttpCL
 === Upcoming
 
 * [x] アイコンの作成
-* [x] プルダウンメニュー
+* [ ] プルダウンメニュー
   ** [x] メニューの遷移
   ** [ ] HTTP通信ログの保存機能 +
   link:https://developer.chrome.com/docs/extensions/reference/storage/[storage API]などによるHTTP通信ログの保存機能
