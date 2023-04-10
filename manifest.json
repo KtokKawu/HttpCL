@@ -1,0 +1,25 @@
+{
+	"name": "HttpCL",
+	"manifest_version": 3,
+	"version":"0.3.0",
+    "description": "This tool provides the feature to capture HTTP requests in order to understand the scale of Web Application Security Testing by third parties.",
+	"permissions": [
+		"activeTab",
+		"scripting",
+		"webRequest"
+	],
+	"host_permissions": [
+		"<all_urls>"
+	],
+	"background": {
+        "service_worker": "scripts/log.js",
+		"type": "module"
+	},
+	"action": {
+		"default_popup": "menu/menu.html",
+		"default_icon": {
+			"32": "images/httpcl_logo_32-32.png"
+		}
+	}
+}
+

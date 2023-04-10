@@ -1,0 +1,51 @@
+/*
+* HttpCL v0.3
+* https://github.com/KtokKawu/HttpCL
+*
+* Copyright (c) 2023 Waku Kataoka
+* Released under the MIT license
+* https://github.com/KtokKawu/HttpCL/LICENSE
+*/
+
+body {
+  background: #222;
+  color: #ebebeb;
+  width: 100px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  color: #fff;
+  padding: 0;
+}
+
+.menu li {
+  position: relative;
+  width: 100px;
+  margin-left: 1px;
+  padding: 5px;
+  background: #444444;
+}
+
+.menuSub {
+  position: absolute;
+  margin-left: -6px;
+  padding: 0;
+  display: none;
+}
+
+.menuSub li a {
+  padding: 5px;
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-bottom: -5px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menuSub li a:hover {
+  background: #FFCA7B;
+}

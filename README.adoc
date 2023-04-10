@@ -1,0 +1,76 @@
+:toc:
+:toclevels: 5
+:sectnums:
+:sectlevels: 5
+
+= HttpCL
+
+image:https://img.shields.io/badge/Author-Kawu-brightgreen[GitHub]
+image:https://img.shields.io/github/license/KtokKawu/HttpCL[GitHub]
+
+HttpCLは、HTTP通信のキャプチャ機能を持つChrome拡張です。 +
+第三者セキュリティ診断の規模（リクエスト数）を把握するためにご利用ください。
+
+== Requirements
+
+|===
+|Browser（検証済みブラウザ/バージョン） |Google Chrome 107.0.5304.122 (Official Build) (64bit)
+|Manifest version |3.0
+|===
+
+== Usage
+
+1. 本ツールをgit cloneする。
++
+----
+git clone https://github.com/KtokKawu/HttpCL
+----
++
+2. Google Chromeにて、link:chrome://extensions/[Chromeの拡張機能]にアクセス。
+3. 「デベロッパー モード」を有効化。
+4. 「パッケージ化されていない拡張機能を読み込む」ボタンより、git cloneしたフォルダを指定。
+5. HttpCLを有効化。
+6. 「Service Worker」リンクを押下。
+7. 「DevTools」ウィンドウの「Console」タブにて、HTTPリクエストログを確認。
+
+== Features
+
+=== Now
+
+* HTTPリクエストを確認できます。 +
+  現在、下記のリクエストボディに対応（確認）済。
+** 通常のPOSTリクエストボディ
+** JSONボディ
+
+=== Upcoming
+
+* [x] アイコンの作成
+* [x] プルダウンメニュー
+  ** [x] メニューの遷移
+  ** [ ] HTTP通信ログの保存機能 +
+  link:https://developer.chrome.com/docs/extensions/reference/storage/[storage API]などによるHTTP通信ログの保存機能
+* [ ] HTTP通信のキャプチャ機能
+  ** [x] HTTPリクエストのパース
+  ** [x] HTTPリクエストのログ出力機能
+  ** [ ] HTTPレスポンスのパース
+  ** [ ] HTTPレスポンスのログ出力機能
+* [ ] アクションのキャプチャ機能
+  ** [ ] アクションの検出 (リンク、ボタン、タブの押下など)
+  ** [ ] アクションの検出のログ出力機能
+* [ ] ブラウザウインドウの自動キャプチャ機能 +
+  link:https://developer.chrome.com/docs/extensions/reference/desktopCapture/[desktopCapture API]などによる画面キャプチャの保存機能
+
+== Author
+
+Waku Kataoka (Kawu)
+
+== License
+
+HttpCL is released under the link:http://www.opensource.org/licenses/MIT[MIT License].
+
+
+=== References
+
+* link:https://developer.chrome.com/docs/extensions/reference/[Chrome Developers - Extensions API reference]
+* link:https://developer.chrome.com/docs/extensions/reference/desktopCapture/[Chrome Developers - Extensions API reference (desktopCapture API)]
+* link:https://github.com/GoogleChrome/chrome-extensions-samples[Google Chrome Extensions samples]
